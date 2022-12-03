@@ -1,3 +1,5 @@
+use crate::util::get_lines;
+
 struct DataRecord {
     opponent: i32,
     player: i32,
@@ -13,10 +15,7 @@ impl DataRecord {
 }
 
 fn get_data(input: &str, is_part_two: bool) -> Vec<DataRecord> {
-    let mut lines = input.split("\n").collect::<Vec<&str>>();
-    if input.chars().last() == Some('\n') {
-        lines.remove(lines.len() - 1);
-    }
+    let lines = get_lines(input);
 
     let mut results: Vec<DataRecord> = Vec::new();
     for line in lines.iter() {

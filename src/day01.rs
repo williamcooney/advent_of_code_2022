@@ -1,8 +1,7 @@
+use crate::util::get_lines;
+
 fn get_data(input: &str) -> Vec<u32> {
-    let mut lines = input.split("\n").collect::<Vec<&str>>();
-    if input.chars().last() == Some('\n') {
-        lines.remove(lines.len() - 1);
-    }
+    let lines = get_lines(input);
 
     let mut results: Vec<u32> = vec![0];
     let mut index = 0;
