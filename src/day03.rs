@@ -6,7 +6,7 @@ fn get_value_for_char(c: &char) -> u32 {
     } else {
         *c as u32 - 'A' as u32 + 27
     };
-    return value;
+    value
 }
 
 pub fn answer1(input: &str) -> String {

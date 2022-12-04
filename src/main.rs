@@ -51,5 +51,5 @@ fn build_path(prefix: &str, day: u32, file_name: &str) -> String {
     }
     day_path.push_str(&day.to_string());
     day_path.push_str(&file_name);
-    return day_path;
+    day_path
 }

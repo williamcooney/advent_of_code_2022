@@ -15,7 +15,7 @@ fn get_data(input: &str) -> Vec<u32> {
         }
     }
 
-    return results;
+    results
 }
 
 pub fn answer1(input: &str) -> String {
