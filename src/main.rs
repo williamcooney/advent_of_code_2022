@@ -26,12 +26,12 @@ fn main() {
         fs::write(&output1_path, &result1).expect("unable to write output1");
         fs::write(&output2_path, &result2).expect("unable to write output2");
 
-        if answer1.trim() != result1 {
+        if answer1.trim() != result1.trim() {
             println!("[DAY {}][1] FAILED => EXPECTED {} GOT {}", day, answer1, result1);
             did_fail = true;
         }
 
-        if answer2.trim() != result2 {
+        if answer2.trim() != result2.trim() {
             println!("[DAY {}][2] FAILED => EXPECTED {} GOT {}", day, answer2, result2);
             did_fail = true;
         }
