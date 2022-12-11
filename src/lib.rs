@@ -9,6 +9,7 @@ mod day07;
 mod day08;
 mod day09;
 mod day10;
+mod day11;
 
 pub struct AdventOfCode<'a> {
     day: u32,
@@ -25,6 +26,7 @@ impl<'a> AdventOfCode<'a> {
 
     pub fn answer1(&self) -> String {
         match self.day {
+            11 => day11::answer1(self.input),
             10 => day10::answer1(self.input),
             9 => day09::answer1(self.input),
             8 => day08::answer1(self.input),
@@ -41,6 +43,7 @@ impl<'a> AdventOfCode<'a> {
 
     pub fn answer2(&self) -> String {
         match self.day {
+            11 => day11::answer2(self.input),
             10 => day10::answer2(self.input),
             9 => day09::answer2(self.input),
             8 => day08::answer2(self.input),
